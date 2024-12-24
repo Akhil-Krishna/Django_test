@@ -1,0 +1,19 @@
+
+
+
+{% extends 'main/base.html' %}
+
+{% block content %}
+  <div class="person-card">
+    {% if person.profile_pic %}
+    <img src="{{ person.profile_pic.url }}" alt="{{ person.username }} image">
+{% else %}
+    <p>No profile picture uploaded.</p>
+{% endif %}
+
+    <h2>{{ person.username }}</h2>
+    <p>{{ person.age }}</p>
+    <p>{{ person.email }}</p>
+    <a href="mailto:{{ peron.email }}" style="text-decoration: none; padding:7px; border:1px solid #e76933; bacground-color:white; color:#e76933;">Message</a>
+  </div>
+{% endblock %}

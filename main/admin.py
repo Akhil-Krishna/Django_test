@@ -1,7 +1,7 @@
 from django.contrib import admin
-from .models import CodingQuestion
 
-admin.site.register(CodingQuestion)
+
+
 
 
 from django.contrib import admin
@@ -17,9 +17,8 @@ class NotificationAdmin(admin.ModelAdmin):
     list_filter = ('is_read', 'created_at')
     
     
-from .models import Course,Slide
-admin.site.register(Course)
-admin.site.register(Slide)
+from .models import Person
+admin.site.register(Person)
 
 
 

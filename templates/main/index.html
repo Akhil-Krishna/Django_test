@@ -14,8 +14,9 @@
         align-items: center;
         justify-content: space-between;
         padding: 3rem;
-        background: linear-gradient(135deg, #1984a4, #88a1b9);
+        background: linear-gradient(135deg, #e76933, #efd1ba);
         color: white;
+        background-color: #e76933;
     }
     .hero-text {
         flex: 1;
@@ -34,7 +35,7 @@
         display: inline-block;
         padding: 0.75rem 1.5rem;
         background-color: white;
-        color: #08b5ea;
+        color: #e76933;
         font-weight: bold;
         text-decoration: none;
         border-radius: 5px;
@@ -109,19 +110,20 @@
     /* Footer Call to Action */
     .footer-cta {
         padding: 2rem;
-        background: linear-gradient(135deg, #2086a5, #7ba7b5);
+        background: linear-gradient(135deg, #ffffff, #ffffff);
         text-align: center;
-        color: white;
+        color: #e76933;
     }
     .footer-cta a {
         display: inline-block;
         padding: 0.75rem 1.5rem;
         background-color: white;
-        color: #08b5ea;
+        color: #e76933;
         font-weight: bold;
         text-decoration: none;
         border-radius: 5px;
         transition: transform 0.3s ease, box-shadow 0.3s ease;
+        border: 1px solid #e76933;
     }
     .footer-cta a:hover {
         transform: scale(1.1);
@@ -171,61 +173,22 @@
 
 <section class="hero">
     <div class="hero-text">
-        <h1>Welcome to GuiD</h1>
-        <p>Embark on a transformative journey of learning and skill development. Our AI-powered roadmap and courses ensure you reach your goals effectively.</p>
-        <a href="/roadmap" class="cta">Explore Roadmap</a>
+        <h1>Welcome to Pookie</h1>
+        <p>Find your match</p>
+        <a href="{% url 'explore'%}" class="cta">Explore</a>
     </div>
     {% load static %}
     <div class="hero-image">
-        <img src="{% static 'main/images/image3.png' %}" alt="Learning illustration">
+        <img src="{% static 'main/images/image5.png' %}" alt="Learning illustration">
     </div>
 </section>
 
-<section class="features">
-    <h2>What Makes GuiD Special?</h2>
-    <div class="feature-list">
-        <div class="feature">
-            <h3>Structured Roadmap</h3>
-            <p>Follow a step-by-step path to master skills and earn badges at each stage.</p>
-        </div>
-        <div class="feature">
-            <h3>Interactive Learning</h3>
-            <p>Engage with AI-powered training and community-driven resources.</p>
-        </div>
-        <div class="feature">
-            <h3>Personalized Reviews</h3>
-            <p>Track your progress and improve with tailored feedback.</p>
-        </div>
-    </div>
-</section>
 
-<section class="additional-content">
-    <h2>Start Your Learning Journey</h2>
-    <div class="row">
-        <div class="col-md-4">
-            <div class="card">
-                <h3>Explore Courses</h3>
-                <p>Dive into a wide range of courses tailored to your interests and goals.</p>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card">
-                <h3>Build Your Resume</h3>
-                <p>Create a professional resume and showcase your achievements.</p>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card">
-                <h3>Join the Community</h3>
-                <p>Engage with peers, share ideas, and grow together.</p>
-            </div>
-        </div>
-    </div>
-</section>
+
 
 <div class="footer-cta">
     <h2>Ready to Get Started?</h2>
-    <a href="{% url 'sign_up' %}">Join GuiD Today</a>
+    <a href="{% url 'sign_up' %}">Join Pookie Today</a>
 </div>
 
 {% endblock %}

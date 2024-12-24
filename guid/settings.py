@@ -46,10 +46,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'main',
-    'channels',
-    'resume_builder',
-    'forum',
-    'roadmap'
+    
     
 ]
 
